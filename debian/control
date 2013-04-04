@@ -6,7 +6,8 @@
 Source: gnome-calculator
 Section: math
 Priority: optional
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Maintainer: BlankOn Developers <blankon-dev@googlegroups.com>
+XSCB-Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
 Uploaders: Andreas Henriksson <andreas@fatal.se>, Josselin Mouette <joss@debian.org>, Michael Biebl <biebl@debian.org>
 Homepage: https://live.gnome.org/Calculator
 Build-Depends: cdbs (>= 0.4.41),
