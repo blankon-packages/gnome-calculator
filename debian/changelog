@@ -1,3 +1,17 @@
+gnome-calculator (3.8.2-1blankon1) suroboyo; urgency=low
+
+  * New upstream release.
+
+ -- Aris Febrianto <ariesfebrianto@gmail.com>  Mon, 27 May 2013 03:06:27 +0700
+
+gnome-calculator (3.8.2-1) unstable; urgency=low
+
+  * New upstream release.
+  * Build-depend on valac (>= 0.18) instead of valac-0.18
+  * Upload to unstable.
+
+ -- Andreas Henriksson <andreas@fatal.se>  Sat, 25 May 2013 12:54:08 +0200
+
 gnome-calculator (3.8.0-1blankon1) suroboyo; urgency=low
 
   * New upstream release
