@@ -1,3 +1,17 @@
+gnome-calculator (3.11.90-1blankon1) tambora; urgency=low
+
+  * New upstream release.
+
+ -- Aris Febrianto <ariesfebrianto@gmail.com>  Sun, 23 Mar 2014 16:20:21 +0700
+
+gnome-calculator (3.11.90-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Bump gtk+ build-dependency to 3.10.0 according to configure.ac
+  * Add build-dependency on gtksourceview3 3.0.0
+
+ -- Andreas Henriksson <andreas@fatal.se>  Tue, 18 Feb 2014 23:38:39 +0100
+
 gnome-calculator (3.10.0-0blankon1) suroboyo; urgency=low
 
   * New Upstream Release 
