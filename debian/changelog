@@ -1,3 +1,20 @@
+gnome-calculator (3.12.0-1blankon1) tambora; urgency=low
+
+  * New upstream release.
+
+ -- Aris Febrianto <ariesfebrianto@gmail.com>  Thu, 27 Mar 2014 03:09:28 +0700
+
+gnome-calculator (3.12.0-1) unstable; urgency=medium
+
+  [ Jackson Doak ]
+  * New upstream release
+  * Update debian/watch
+  * debian/control:
+    - Bump debhelper to 9
+    - Bump standards-version to 3.9.5
+
+ -- Andreas Henriksson <andreas@fatal.se>  Mon, 24 Mar 2014 20:09:30 +0100
+
 gnome-calculator (3.11.90-1blankon1) tambora; urgency=low
 
   * New upstream release.
