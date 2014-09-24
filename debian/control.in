@@ -12,9 +12,9 @@ Build-Depends: cdbs (>= 0.4.41),
                gnome-pkg-tools (>= 0.10),
                yelp-tools (>= 3.1.1),
                intltool (>= 0.40.1),
-               valac (>= 0.18.0),
-               libglib2.0-dev (>= 2.31),
-               libgtk-3-dev (>= 3.10.0),
+               valac (>= 0.24),
+               libglib2.0-dev (>= 2.40.0),
+               libgtk-3-dev (>= 3.11.6),
                libgtksourceview-3.0-dev (>= 3.0.0),
                libxml2-dev (>= 2.4.7)
 Standards-Version: 3.9.5
