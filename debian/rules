@@ -9,5 +9,6 @@ include /usr/share/gnome-pkg-tools/1/rules/gnome-get-source.mk
 
 LDFLAGS += -Wl,-z,defs -Wl,-O1 -Wl,--as-needed
 
+# Don't enable on Ubuntu
 # make the transitional package have a high enough version number
-DEB_DH_GENCONTROL_ARGS_gcalctool += -u-v1:$(DEB_VERSION)
+#DEB_DH_GENCONTROL_ARGS_gcalctool += -u-v1:$(DEB_VERSION)
