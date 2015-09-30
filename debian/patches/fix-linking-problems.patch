@@ -1,0 +1,46 @@
+From: Andreas Henriksson <andreas@fatal.se>
+Subject: Explicitly link required libraries
+
+Linking gnome-calculator fails because of undefined symbol
+'gtk_source_completion_provider_get_type'
+
+Linking gcalccmd fails because of undefined symbol
+'g_object_unref'
+
+--- a/configure.ac
++++ b/configure.ac
+@@ -38,6 +38,11 @@
+ PKG_CHECK_MODULES(GNOME_CALCULATOR, [
+     gtk+-3.0 >= $GTK_REQUIRED
+     gmodule-export-2.0
++    gtksourceview-3.0 >= $GTKSOURCEVIEW_REQUIRED
++])
++
++PKG_CHECK_MODULES(GCALCCMD, [
++    gobject-2.0 >= $GLIB_REQUIRED
+ ])
+ 
+ PKG_CHECK_MODULES(SEARCH_PROVIDER, [
+--- a/src/Makefile.am
++++ b/src/Makefile.am
+@@ -44,6 +44,7 @@
+ 	$(GNOME_CALCULATOR_LIBS) \
+ 	$(top_builddir)/lib/libcalculator.la
+ 
++
+ gcalccmd_SOURCES = \
+ 	config.vapi \
+ 	gcalccmd.vala
+@@ -57,7 +58,12 @@
+ 	$(top_builddir)/lib/libcalculator.vapi \
+ 	$(top_builddir)/lib/mpfr.vapi
+ 
++gcalccmd_CPPFLAGS = \
++	$(AM_CPPFLAGS) \
++	$(GCALCCMD_CFLAGS)
++
+ gcalccmd_LDADD = \
++	$(GCALCCMD_LIBS) \
+ 	$(top_builddir)/lib/libcalculator.la
+ 
+ -include $(top_srcdir)/git.mk
